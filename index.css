@@ -40,7 +40,7 @@ html {
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    overflow-x: auto;
+    overflow-x: none;
 }
 
 body {
