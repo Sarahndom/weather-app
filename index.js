@@ -1,4 +1,8 @@
 
+if (window.matchMedia("(max-width: 768px)").matches) {
+    document.querySelector(".unit").style.left = "250px";
+}
+
 
 const apiKey = "4dc4e574386a136f8b3c0e5e75a8c157";
 const defaultCity = "Berlin";

@@ -1,4 +1,5 @@
 :root {
+
     /* Neutral */
     --neutral-900: hsl(243, 96%, 9%);
     --neutral-800: hsl(243, 27%, 20%);
@@ -40,7 +41,7 @@ html {
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    overflow-x: none;
+    overflow-x: scroll;
 }
 
 body {
@@ -65,9 +66,12 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
+
 
 .container {
     width: 100%;
@@ -75,6 +79,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -86,17 +91,15 @@ body {
 }
 
 .unit {
-    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: var(--neutral-700);
-    right: 10rem;
     padding: 8px;
     border-radius: var(--radius-sm);
 }
 
-#unit-svg {
-    position: relative;
-    top: 2px;
-}
+#unit-svg {}
 
 #unit {
     background-color: var(--neutral-700);
@@ -105,25 +108,25 @@ body {
 }
 
 h1 {
+    display: flex;
     font-family: var(--font-grotesque);
     white-space: nowrap;
-    margin-top: 2rem;
-    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(20px, 5vw, 48px);
 }
 
 #search-section {
     height: auto;
     display: flex;
+    flex: 2;
     margin-top: 1rem;
     width: 100%;
-    max-width: 550px;
+    max-width: 76%;
     justify-content: center;
     align-self: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
-
-
-
 
 #search-bar {
     display: flex;
@@ -133,8 +136,6 @@ h1 {
     padding: 0.5rem 1rem;
     align-items: center;
 }
-
-
 
 #search-bar.active-glow {
     outline: 2px solid rgba(0, 150, 255, 0.8);
@@ -152,8 +153,6 @@ h1 {
     margin-right: 0.5rem;
     padding: 0;
 }
-
-
 
 #search-input {
     flex-grow: 1;
@@ -196,18 +195,21 @@ h1 {
 }
 
 #error-message {
-    position: absolute;
-    top: 10px;
-    right: 6rem;
-    width: 350px;
+    position: relative;
+    height: 35px;
+    top: 30%;
+    right: 8rem;
+    width: 300px;
     background: #ff4d4d;
     color: white;
-    padding: 10px 0 10px 30px;
-    border-radius: 5px;
+    padding: 5px 0 10px 80px;
+    border-radius: 8px;
     font-size: 15px;
     display: none;
     white-space: nowrap;
+    z-index: 10;
 }
+
 
 #error-message.show {
     display: block;
@@ -400,13 +402,14 @@ h3 {
 
 }
 
-
 /* Hourly forecast section */
 
 .hourly-forecast-section {
     width: 25vw;
     height: auto;
     display: flex;
+    justify-content: space-between;
+    position: relative;
     background-color: var(--neutral-700);
     border-radius: var(--radius-md);
     padding: 1.5rem;
@@ -424,7 +427,9 @@ h3 {
 
 #hourly-forecast {
     position: absolute;
-    transform: translateX(230px);
+    right: 10%;
+    top: 6%;
+    transform: translateY(-50%);
     width: 100px;
     color: var(--neutral-0);
     background-color: var(--neutral-600);
@@ -432,7 +437,6 @@ h3 {
     padding: 3px 5px;
     border-radius: var(--radius-sm);
 }
-
 
 .hourly-forecast-sections {
     display: flex;
@@ -511,51 +515,26 @@ h3 {
         grid-column: 1 / -1;
     }
 
-    #hourly-forecast {
-        position: absolute;
-        transform: translateX(400px);
-        width: 100px;
-
-    }
-
 }
 
-
 @media (max-width: 768px) {
-    body {
-        align-items: flex-start;
-    }
 
     .weather-app {
         max-width: 600px;
-
-    }
-
-
-    .unit {
-        transform: translateX(5px);
-        width: 110px;
-    }
-
-    h1 {
-        position: relative;
-        right: 3px;
-        font-size: 35px;
-    }
-
-    #search-section {
-        position: relative;
-        width: 90%;
-        max-width: 550px;
-        right: 15px;
     }
 
     .weather-app {
         padding: 0.5rem;
     }
 
-    .unit {
-        right: 0.5rem;
+    #error-message {
+        position: relative;
+        left: 4px;
+        height: 35px;
+        transform: translateY(-8rem);
+        width: 100%;
+        max-width: 550px;
+        background: #ff4d4d;
     }
 
     .left-forecast-column {
@@ -571,7 +550,6 @@ h3 {
         font-size: 1.6rem;
     }
 
-
     #sunny-icon {
         bottom: 125px;
         left: 20rem;
@@ -581,6 +559,28 @@ h3 {
         bottom: 230px;
         left: 26rem;
     }
+
+    #search-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        gap: 1rem;
+    }
+
+    #search-bar {
+        order: 1;
+        width: 100%;
+        max-width: 550px;
+    }
+
+    #search-button {
+        order: 2;
+        width: 100%;
+        max-width: 550px;
+        align-self: center;
+    }
+
 
     .weather-metric {
         width: calc(50% - 0.25rem);
