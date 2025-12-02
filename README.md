@@ -1,78 +1,126 @@
-# 🌦️ Frontend Mentor - Weather App Solution
 
-This is a solution to the [Weather app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/weather-app-K1FhddVm49). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+🌦️ Frontend Mentor – Weather App Challenge (My Solution)
 
----
+This is my solution to the Frontend Mentor Weather App Challenge.
+The challenge focuses on building a pixel-perfect, fully responsive weather app interface, and it’s a great project for improving front-end development skills using HTML, CSS, and Vanilla JavaScript.
 
-## Table of contents
+⭐ If you're searching for “Frontend Mentor Weather App Challenge,” this is my full solution including code, design details, and deployment.
 
-* [Overview](#overview)
-    * [The Challenge](#the-challenge)
-    * [Screenshot](#screenshot)
-    * [Links](#links)
-* [My Process](#my-process)
-    * [Built with](#built-with)
-    * [What I Learned](#what-i-learned)
-    * [Continued Development](#continued-development)
-* [Author](#author)
+📑 Table of Contents
 
----
+Overview
 
-## Overview
+The Challenge
 
-### The Challenge
+![Weather App Screenshot](image.png)
 
-The primary goal of this solution was to build the complete, pixel-perfect, and fully **responsive visual interface** for the weather application, allowing for future integration with a live data source.
+Links
 
-The interface was designed to support the following features:
+My Process
 
-* **Location Search Bar** and **Unit Toggle** elements.
-* Display of **current weather conditions** and **additional metrics**.
-* **7-day forecast** and **hourly forecast** structure.
-* **Optimal responsive layout** across all device sizes.
-* Correct **hover and focus states** for all interactive elements.
+Built With
 
-### Screenshot
+What I Learned
 
-![alt text](image.png)
+Continued Development
 
-### Links
+Author
 
-* **Solution URL:** [Add your solution URL here]
-* **Live Site URL:** [Add your live site URL here]
+🚀 Overview
+The Challenge
 
----
+The goal of this project was to create the complete UI for a weather application, including:
 
-## 🛠️ My Process
+Location search bar
 
-### Built with
+Unit toggle (°C / °F)
 
-This entire front-end layout and design were achieved using only HTML and CSS, demonstrating foundational web development mastery.
+Current weather data section
 
-* **Semantic HTML5** markup
-* **CSS Custom Properties** (Variables)
-* **Flexbox** and **CSS Grid** for complex layout management
-* **Mobile-first workflow**, ensuring optimal display from the smallest screens (320px) up to **desktop layouts (1440px)**, as per the style guide.
-* **Media Queries**
+Additional weather metrics
 
-### What I Learned
+7-day forecast layout
 
-Focusing solely on HTML and CSS for this intricate layout provided excellent learning opportunities:
+Hourly forecast layout
 
-* **Advanced Layout with CSS Grid:** Successfully structuring the dense data panels (like the additional metrics and hourly forecast) using **CSS Grid** to ensure data alignment and smooth flow on different breakpoints.
-* **Pure CSS Interactivity:** Implementing the visual toggle for Metric/Imperial units and simulating the day selector using **CSS pseudo-classes (`:checked`)** to maintain the look and feel of a functional app element.
-* **Designing for Data Density and Responsiveness:** Mastering the responsive design to ensure that tables and lists, which hold a large amount of forecast data, remain **readable and well-spaced** on the smallest mobile screens. This included careful use of media queries to adapt the layout between **mobile (375px)** and **desktop (1440px)** views.
+Full responsive design across all screens
 
-### Continued Development
+Perfect hover and focus states
 
-The next steps for this project are to integrate a data source:
+This solution currently focuses on HTML + CSS, with the layout ready for future JavaScript API integration.
 
-* **JavaScript Integration:** Adding JavaScript to handle the search functionality, fetch live weather data from an API, and dynamically update the content and unit conversions.
-* **Accessibility (A11y):** Further enhancing keyboard navigation and ARIA attributes for the various forecast elements and toggles.
+🖼️ Screenshot
 
----
+(Add your screenshot image here)
 
-## Author
+🔗 Links
 
-* **Frontend Mentor:** [@SarahNdom](https://www.frontendmentor.io/profile/Sarahndom)
-* **GitHub:** [https://github.com/sarahndom](https://github.com/sarahndom)
+Solution on Frontend Mentor:
+https://www.frontendmentor.io/solutions/real-time-weather-data-display-using-fetch-api-and-vanilla-js-xspbFR673g
+
+Live Website:
+https://weather-app-nxqr.vercel.app/
+
+(Optional) Google Search Link for Users:
+Search "Frontend Mentor Weather App Challenge"
+
+🛠️ My Process
+Built With
+
+This project was developed using only HTML and CSS, demonstrating core UI development practices:
+
+Semantic HTML5
+
+CSS Custom Properties (Variables)
+
+Flexbox
+
+CSS Grid (for complex layout areas)
+
+Mobile-first workflow
+
+Multiple responsive breakpoints with media queries
+
+📘 What I Learned
+
+Working on this challenge strengthened multiple key areas:
+
+⭐ Advanced CSS Grid Layout
+
+I used Grid to structure dense data components like hourly and weekly forecasts, ensuring perfect alignment and consistency across devices.
+
+⭐ Pure CSS Interactivity
+
+The unit toggle and day selector were styled using pseudo-classes and sibling combinators, simulating functional UI elements without JavaScript.
+
+⭐ Responsive Design for Data-Heavy UI
+
+Weather apps contain a lot of information. Careful spacing, sizing, and media queries were essential to maintain readability on mobile (375px) through desktop (1440px).
+
+🔮 Continued Development
+
+Next planned steps:
+
+JavaScript Integration
+
+Fetch real-time weather data
+
+Implement search functionality
+
+Automatic content updates
+
+Unit conversion logic (°C ↔ °F)
+
+Accessibility Enhancements
+
+ARIA attributes
+
+Improved keyboard navigation
+
+Better focus management
+
+👤 Author
+
+Frontend Mentor: @SarahNdom
+
+GitHub: https://github.com/sarahndom
