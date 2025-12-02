@@ -12,8 +12,6 @@ Overview
 
 The Challenge
 
-![Weather App Screenshot](image-1.png))
-
 Links
 
 My Process
@@ -49,9 +47,10 @@ Perfect hover and focus states
 
 This solution currently focuses on HTML + CSS, with the layout ready for future JavaScript API integration.
 
-🖼️ Screenshot
 
-(Add your screenshot image here)
+
+![Weather App Screenshot] (image-2.png)
+
 
 🔗 Links
 
