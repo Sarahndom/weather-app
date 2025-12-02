@@ -12,7 +12,7 @@ Overview
 
 The Challenge
 
-![Weather App Screenshot](image.png)
+![Weather App Screenshot](image-1.png))
 
 Links
 
