@@ -49,7 +49,7 @@ This solution currently focuses on HTML + CSS, with the layout ready for future 
 
 
 
-![Weather App Screenshot] (image-2.png)
+![Weather App Screenshot](image-2.png)
 
 
 🔗 Links
