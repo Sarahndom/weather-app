@@ -503,7 +503,6 @@ h3 {
 @media (max-width: 768px) {
 
     .container {
-        border: 1px solid hotpink;
         overflow-x: hidden;
         padding: 0;
     }
