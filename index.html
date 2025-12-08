@@ -11,6 +11,9 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
     rel="svtylesheet">
+
+  <script src="index.js" defer></script>
+
   <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -35,17 +38,19 @@
 
           <img src="./assets/images/icon-units.svg" id="unit-svg" alt="unit-svg">
 
-          <select name="" id="unit">
-
+          <label for="unit" class="sr-only">Choose unit</label>
+          <select name="unit" id="unit">
             <option value="unit">Units</option>
             <option value="metric">Metric</option>
             <option value="imperial">Imperial</option>
-
           </select>
+
 
         </div>
 
         <h1>How's the weather looking today?</h1>
+
+        <!-- <form action=""> -->
 
         <div id="search-section">
 
@@ -59,13 +64,14 @@
 
           <button id="search-button"> Search </button>
 
+          <!-- </form> -->
+          <div id="loader" hidden>Loading...</div>
+
         </div>
 
         <!-- <div id="city-suggestions"></div> -->
       </header>
       <div id="error-message" class="error hidden"></div>
-
-
 
 
       <!-- weather data -->
@@ -95,7 +101,7 @@
 
           <!-- Weather Metrics -->
 
-          <div id="weather-metrics">
+          <section id="weather-metrics">
 
             <div class="weather-metric">
 
@@ -133,7 +139,7 @@
             </div>
 
 
-          </div>
+          </section>
 
 
           <!-- Daily Forecast section  -->
@@ -141,7 +147,7 @@
 
           <h3> Daily forecast </h3>
 
-          <div class="daily-forecast">
+          <div class="daily-forecast" tabindex="0">
 
             <div id="daily-forecast">
 
@@ -261,7 +267,7 @@
 
         <!-- Hourly forecast section -->
 
-        <div class="hourly-forecast-section">
+        <section class="hourly-forecast-section">
 
           <span class="hourly-forecast-text">
             Houry forecast
@@ -524,18 +530,17 @@
 
           </div>
 
-        </div>
+        </section>
 
 
       </div>
 
-      <script src="index.js"></script>
 
-      <div class="attribution">
+      <footer class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           rel="noopener noreferrer">Frontend Mentor</a>.
         Coded by <a href="#" target="_blank" rel="noopener noreferrer"> Sarah Ndom </a>.
-      </div>
+      </footer>
 
     </div>
 

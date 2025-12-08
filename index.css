@@ -98,6 +98,18 @@ body {
 
 #unit-svg {}
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
 #unit {
     background-color: var(--neutral-700);
     border: var(--neutral-700);
@@ -307,10 +319,13 @@ h1 {
     font-size: 1.2rem;
     font-weight: 500;
     gap: 1rem;
-    overflow-x: auto;
+    /* overflow-x: auto; */
+    overflow: hidden;
+
 }
 
 .weather-metric {
+    border: 1px solid red;
     min-width: 0;
     flex: 1 1 0;
     background-color: var(--neutral-800);
@@ -351,12 +366,13 @@ h3 {
 }
 
 .daily-forecast {
+    border: 1px solid red;
     width: 100%;
     height: auto;
     display: flex;
     gap: 0.5rem;
     overflow-x: auto;
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
     justify-content: flex-start;
 }
 
