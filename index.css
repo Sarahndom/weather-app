@@ -325,7 +325,6 @@ h1 {
 }
 
 .weather-metric {
-    border: 1px solid red;
     min-width: 0;
     flex: 1 1 0;
     background-color: var(--neutral-800);
